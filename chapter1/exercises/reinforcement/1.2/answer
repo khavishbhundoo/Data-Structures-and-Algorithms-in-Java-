@@ -1,0 +1,6 @@
+Suppose that we create an array A of GameEntry objects, which has an integer
+scores field, and we clone A and store the result in an array B. If we then immediately
+set A[4].score equal to 550, what is the score value of the GameEntry
+object referenced by B[4]?
+
+The score value referenced by B[4] would be the value originally referenced at A[4].Thus B[4].score won't equal to 550 unless A[4].score originally(i.e at the time we clone A) contained 550.   
